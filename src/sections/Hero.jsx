@@ -8,6 +8,8 @@ import { useMediaQuery } from 'react-responsive'
 import { calculateSizes } from '../constants/index.js'
 import Target from '../components/Target.jsx'
 import ReactLogo from '../components/ReactLogo.jsx'
+import Cube from '../components/Cube.jsx'
+import Book from '../components/Book.jsx'
 
 function Hero () {
   const x = useControls('HackerRoom', {
@@ -86,6 +88,12 @@ function Hero () {
             <group>
               <Target position={size.targetPosition}/>
               <ReactLogo position={size.reactLogoPosition}/>
+              <Cube position={size.cubePosition}/>
+              <Book
+                position={[x.positionX, x.positionY, x.positionZ]}
+                rotation={[x.rotationX, x.rotationY, x.rotationZ]}
+                scale={[x.scale, x.scale, x.scale]}
+              />
             </group>
 
             <ambientLight intensity={1}/>
