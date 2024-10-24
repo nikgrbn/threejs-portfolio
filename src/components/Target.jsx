@@ -8,7 +8,8 @@ function Target (props) {
   const {scene} = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/target-stand/model.gltf')
 
   useGSAP(() => {
-    gsap.to(targetRef.current.position, {
+    gsap
+    .to(targetRef.current.position, {
       y: targetRef.current.position.y + 0.5,
       duration: 1.5,
       repeat: -1,

@@ -90,9 +90,9 @@ function Hero () {
               <ReactLogo position={size.reactLogoPosition}/>
               <Cube position={size.cubePosition}/>
               <Book
-                position={[x.positionX, x.positionY, x.positionZ]}
-                rotation={[x.rotationX, x.rotationY, x.rotationZ]}
-                scale={[x.scale, x.scale, x.scale]}
+                position={size.bookPosition}
+                rotation={size.bookRotation}
+                scale={size.bookScale}
               />
             </group>
 
