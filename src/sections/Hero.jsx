@@ -7,6 +7,7 @@ import { Leva, useControls } from 'leva'
 import { useMediaQuery } from 'react-responsive'
 import { calculateSizes } from '../constants/index.js'
 import Target from '../components/Target.jsx'
+import ReactLogo from '../components/ReactLogo.jsx'
 
 function Hero () {
   const x = useControls('HackerRoom', {
@@ -84,6 +85,7 @@ function Hero () {
 
             <group>
               <Target position={size.targetPosition}/>
+              <ReactLogo position={size.reactLogoPosition}/>
             </group>
 
             <ambientLight intensity={1}/>
