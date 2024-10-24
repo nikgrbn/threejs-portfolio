@@ -10,51 +10,52 @@ import Target from '../components/Target.jsx'
 import ReactLogo from '../components/ReactLogo.jsx'
 import Cube from '../components/Cube.jsx'
 import Book from '../components/Book.jsx'
+import AndroidLogo from '../components/AndroidLogo.jsx'
 
 function Hero () {
-  const x = useControls('HackerRoom', {
-    positionX: {
-      value: 2.5,
-      min: -10,
-      max: 10,
-    },
-    positionY: {
-      value: 2.5,
-      min: -10,
-      max: 10,
-    },
-    positionZ: {
-      value: 2.5,
-      min: -10,
-      max: 10,
-    },
-    rotationX: {
-      value: 0,
-      min: -10,
-      max: 10,
-    },
-    rotationY: {
-      value: 0,
-      min: -10,
-      max: 10,
-    },
-    rotationZ: {
-      value: 0,
-      min: -10,
-      max: 10,
-    },
-    scale: {
-      value: 1,
-      min: 0.1,
-      max: 10
-    }
-  })
+  // const x = useControls('HackerRoom', {
+  //   positionX: {
+  //     value: 2.5,
+  //     min: -10,
+  //     max: 10,
+  //   },
+  //   positionY: {
+  //     value: 2.5,
+  //     min: -10,
+  //     max: 10,
+  //   },
+  //   positionZ: {
+  //     value: 2.5,
+  //     min: -10,
+  //     max: 10,
+  //   },
+  //   rotationX: {
+  //     value: 0,
+  //     min: -10,
+  //     max: 10,
+  //   },
+  //   rotationY: {
+  //     value: 0,
+  //     min: -10,
+  //     max: 10,
+  //   },
+  //   rotationZ: {
+  //     value: 0,
+  //     min: -10,
+  //     max: 10,
+  //   },
+  //   scale: {
+  //     value: 1,
+  //     min: 0.1,
+  //     max: 10
+  //   }
+  // })
 
   const isSmall = useMediaQuery({ maxWidth: 440 })
   const isMobile = useMediaQuery({ maxWidth: 768 })
   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 })
 
-  const size = calculateSizes(isSmall, isMobile, isTablet);
+  const size = calculateSizes(isSmall, isMobile, isTablet)
 
   return (
     <section className="min-h-screen flex flex-col relative">
@@ -70,7 +71,7 @@ function Hero () {
       </div>
 
       <div className="w-full h-full absolute inset-0">
-            <Leva/>
+        <Leva/>
         <Canvas className="w-full h-full">
           <Suspense fallback={<CanvasLoader/>}>
             <PerspectiveCamera makeDefault position={[0, 0, 20]}/>
@@ -89,10 +90,13 @@ function Hero () {
               <Target position={size.targetPosition}/>
               <ReactLogo position={size.reactLogoPosition}/>
               <Cube position={size.cubePosition}/>
-              <Book
-                position={size.bookPosition}
-                rotation={size.bookRotation}
-                scale={size.bookScale}
+              {/*<Book*/}
+              {/*  position={size.bookPosition}*/}
+              {/*  rotation={size.bookRotation}*/}
+              {/*  scale={size.bookScale}*/}
+              {/*/>*/}
+              <AndroidLogo
+                position={size.androidLogoPosition} rotation={size.androidLogoRotation} scale={size.androidLogoScale}
               />
             </group>
 
