@@ -11,6 +11,7 @@ import ReactLogo from '../components/ReactLogo.jsx'
 import Cube from '../components/Cube.jsx'
 import Book from '../components/Book.jsx'
 import AndroidLogo from '../components/AndroidLogo.jsx'
+import HeroCamera from '../components/HeroCamera.jsx'
 
 function Hero () {
   // const x = useControls('HackerRoom', {
@@ -75,16 +76,18 @@ function Hero () {
         <Canvas className="w-full h-full">
           <Suspense fallback={<CanvasLoader/>}>
             <PerspectiveCamera makeDefault position={[0, 0, 20]}/>
-            <HackerRoom
-              scale={size.deskScale}
-              position={size.deskPosition}
-              rotation={[0.2, 2.8, 0]}
 
-              // Liva panel
-              // position={[x.positionX, x.positionY, x.positionZ]}
-              // rotation={[x.rotationX, x.rotationY, x.rotationZ]}
-              // scale={[x.scale, x.scale, x.scale]}
-            />
+            <HeroCamera isMobile={isMobile}>
+              <HackerRoom
+                scale={size.deskScale}
+                position={size.deskPosition}
+                rotation={[0.2, 2.8, 0]}
+                // Liva panel
+                // position={[x.positionX, x.positionY, x.positionZ]}
+                // rotation={[x.rotationX, x.rotationY, x.rotationZ]}
+                // scale={[x.scale, x.scale, x.scale]}
+              />
+            </HeroCamera>
 
             <group>
               <Target position={size.targetPosition}/>
