@@ -7,6 +7,7 @@ function About () {
   return (
     <section className="c-space my-20">
       <div className="grid xl:grid-cols-3 xl:grid-rows-3 md:grid-cols-2 grid-cols-1 gap-5">
+
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img src="/assets/grid1-m2.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain"/>
@@ -47,6 +48,22 @@ function About () {
             </div>
           </div>
         </div>
+
+        <div className="xl:col-span-2 xl:row-span-3">
+          <div className="grid-container">
+            <img src="/assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain"/>
+            <div>
+              <p className="grid-headtext">
+                This is headtext
+              </p>
+              <p className="grid-subtext">
+                ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
 
       </div>
     </section>
