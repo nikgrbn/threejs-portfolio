@@ -248,15 +248,19 @@ export const myProjects = [
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
     return {
-        deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.065,
-        deskPosition: isMobile ? [0.5, -4.5, 0] : [0.25, -5.5, 0],
+        deskScale: isSmall ? 0.045 : isMobile ? 0.055 : 0.060,
+        deskPosition: isMobile ? [0.5, -3.5, 0] : [0.25, -4.0, 0],
         cubePosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
         reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [9, 3, 0],
         ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-12, 10, 0] : [-24, 10, 0],
-        targetPosition: isSmall ? [-5, -10, -10] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-13, -13, -10],
+        targetPosition: isSmall ? [-5, -10, -10] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-13, -11, -10],
         bookScale: 0.9,
         bookPosition: [-9.1, -0.9, -0.3],
-        bookRotation: [-5, -6.4, -0.2]
+        bookRotation: [-5, -6.4, -0.2],
+        androidLogoScale: 0.3,
+        androidLogoPosition: isSmall? [-1.5, 2.2, 9.4] : isMobile ? [-2.9, 2.7, 9.4] : isTablet ? [-3.9, 2.7, 9.4] : [-4.9, 2.7, 9.4],
+        androidLogoRotation: [0.4, 0.6, -0.2]
+
     };
 };
 
