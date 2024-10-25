@@ -257,8 +257,8 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
         bookScale: 0.9,
         bookPosition: [-9.1, -0.9, -0.3],
         bookRotation: [-5, -6.4, -0.2],
-        androidLogoScale: 0.4,
-        androidLogoPosition: [-6.1, 2.3, 6.3],
+        androidLogoScale: 0.3,
+        androidLogoPosition: isSmall? [-1.5, 2.2, 9.4] : isMobile ? [-2.9, 2.7, 9.4] : isTablet ? [-3.9, 2.7, 9.4] : [-4.9, 2.7, 9.4],
         androidLogoRotation: [0.4, 0.6, -0.2]
 
     };

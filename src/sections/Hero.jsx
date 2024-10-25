@@ -13,43 +13,43 @@ import Book from '../components/Book.jsx'
 import AndroidLogo from '../components/AndroidLogo.jsx'
 
 function Hero () {
-  // const x = useControls('HackerRoom', {
-  //   positionX: {
-  //     value: 2.5,
-  //     min: -10,
-  //     max: 10,
-  //   },
-  //   positionY: {
-  //     value: 2.5,
-  //     min: -10,
-  //     max: 10,
-  //   },
-  //   positionZ: {
-  //     value: 2.5,
-  //     min: -10,
-  //     max: 10,
-  //   },
-  //   rotationX: {
-  //     value: 0,
-  //     min: -10,
-  //     max: 10,
-  //   },
-  //   rotationY: {
-  //     value: 0,
-  //     min: -10,
-  //     max: 10,
-  //   },
-  //   rotationZ: {
-  //     value: 0,
-  //     min: -10,
-  //     max: 10,
-  //   },
-  //   scale: {
-  //     value: 1,
-  //     min: 0.1,
-  //     max: 10
-  //   }
-  // })
+  const x = useControls('HackerRoom', {
+    positionX: {
+      value: 2.5,
+      min: -10,
+      max: 10,
+    },
+    positionY: {
+      value: 2.5,
+      min: -10,
+      max: 10,
+    },
+    positionZ: {
+      value: 2.5,
+      min: -10,
+      max: 10,
+    },
+    rotationX: {
+      value: 0,
+      min: -10,
+      max: 10,
+    },
+    rotationY: {
+      value: 0,
+      min: -10,
+      max: 10,
+    },
+    rotationZ: {
+      value: 0,
+      min: -10,
+      max: 10,
+    },
+    scale: {
+      value: 1,
+      min: 0.1,
+      max: 10
+    }
+  })
 
   const isSmall = useMediaQuery({ maxWidth: 440 })
   const isMobile = useMediaQuery({ maxWidth: 768 })
@@ -97,6 +97,9 @@ function Hero () {
               {/*/>*/}
               <AndroidLogo
                 position={size.androidLogoPosition} rotation={size.androidLogoRotation} scale={size.androidLogoScale}
+                // position={[x.positionX, x.positionY, x.positionZ]}
+                // rotation={[x.rotationX, x.rotationY, x.rotationZ]}
+                // scale={[x.scale, x.scale, x.scale]}
               />
             </group>
 
