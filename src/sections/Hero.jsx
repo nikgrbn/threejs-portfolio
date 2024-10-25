@@ -76,7 +76,7 @@ function Hero () {
         <Leva/>
         <Canvas className="w-full h-full">
           <Suspense fallback={<CanvasLoader/>}>
-            <PerspectiveCamera makeDefault position={[0, 0, 25]}/>
+            <PerspectiveCamera makeDefault position={[0, 0, 30]}/>
             <HeroCamera isMobile={isMobile}>
               <HackerRoom
                 scale={size.deskScale}
