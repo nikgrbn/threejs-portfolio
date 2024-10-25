@@ -12,6 +12,7 @@ import Cube from '../components/Cube.jsx'
 import Book from '../components/Book.jsx'
 import AndroidLogo from '../components/AndroidLogo.jsx'
 import HeroCamera from '../components/HeroCamera.jsx'
+import Button from '../components/Button.jsx'
 
 function Hero () {
   // const x = useControls('HackerRoom', {
@@ -75,8 +76,7 @@ function Hero () {
         <Leva/>
         <Canvas className="w-full h-full">
           <Suspense fallback={<CanvasLoader/>}>
-            <PerspectiveCamera makeDefault position={[0, 0, 20]}/>
-
+            <PerspectiveCamera makeDefault position={[0, 0, 25]}/>
             <HeroCamera isMobile={isMobile}>
               <HackerRoom
                 scale={size.deskScale}
@@ -110,6 +110,12 @@ function Hero () {
             <directionalLight position={[10, 10, 10]} intensity={0.5}/>
           </Suspense>
         </Canvas>
+      </div>
+
+      <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
+        <a href="#contact" className="w-fit">
+          <Button name="Hire me" isBeam containerClass="sm:2-fit w-full sm:min-2-96"/>
+        </a>
       </div>
 
     </section>
