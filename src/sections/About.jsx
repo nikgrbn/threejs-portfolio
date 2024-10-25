@@ -6,6 +6,7 @@ import Book from '../components/Book.jsx'
 import { Canvas } from '@react-three/fiber'
 import { Float, OrbitControls } from '@react-three/drei'
 import { useMediaQuery } from 'react-responsive'
+import Swarm from '../components/Swarm.jsx'
 
 function About () {
   const isSmall = useMediaQuery({ maxWidth: 768 })
@@ -72,6 +73,7 @@ return (
         <div className="grid-container">
           {/*<img src="/assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain"/>*/}
           <Canvas>
+              <Swarm count={150} />
               <Book
                 texturePath="textures/cp-systems.jpg"
                 isOnFront={true}
