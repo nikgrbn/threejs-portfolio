@@ -9,11 +9,11 @@ function About () {
       <div className="grid xl:grid-cols-3 xl:grid-rows-3 md:grid-cols-2 grid-cols-1 gap-5">
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="/assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain"/>
+            <img src="/assets/grid1-m2.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain"/>
             <div>
               <p className="grid-headtext">Hi, I'm Nikita</p>
               <p className="grid-subtext">Since childhood programming was my passion.
-                I'm always ready to learn and challenge myself.
+                I'm always ready to learn and create new stuff.
               </p>
             </div>
           </div>
