@@ -68,7 +68,7 @@ function Hero () {
           <span className="waving-hand">👋</span>
         </p>
         <p className="hero_tag text-gray_gradient">
-          Building & Improving things
+          Building & Developing things
         </p>
       </div>
 

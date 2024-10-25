@@ -10,6 +10,7 @@ import Swarm from '../components/Swarm.jsx'
 
 function About () {
   const isSmall = useMediaQuery({ maxWidth: 768 })
+  const isMedium = useMediaQuery({ minWidth: 768, maxWidth: 1024 })
 
   const [hasCopied, setHasCopied] = useState(false)
   const handleCopy = () => {
@@ -77,12 +78,14 @@ return (
               <Book
                 texturePath="textures/cp-systems.jpg"
                 isOnFront={true}
-                position={isSmall ? [-1, 0, 0] : [-2, 0, 0]} scale={isSmall ? 18 : 23}
+                position={isSmall ? [-1, 0, 0] : isMedium ? [-1.5,0,0] : [-2, 0, 0]}
+                scale={isSmall ? 18 : isMedium ? 20 : 23}
                 rotation={[-Math.PI / 40, -Math.PI / 20, 0]}/>
               <Book
                 texturePath="textures/bulgakov.jpg"
                 isOnFront={false}
-                position={isSmall ? [3, 0, -5] : [4, 0, -5]} scale={isSmall ? 18 : 23}
+                position={isSmall ? [3, 0, -5] : [4, 0, -5]}
+                scale={isSmall ? 18 : isMedium ? 20 : 23}
                 rotation={[-Math.PI / 3, 0, -Math.PI / 3]}/>
           </Canvas>
           <div>
