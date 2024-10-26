@@ -7,6 +7,7 @@ import Smartphone from '../components/Smartphone.jsx'
 import { TextureLoader } from 'three'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import { useMediaQuery } from 'react-responsive'
 
 const projectCount = myProjects.length
 
@@ -14,6 +15,7 @@ function Projects () {
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(0)
   const currentProject = myProjects[selectedProjectIndex]
   const matcapTexture = useLoader(TextureLoader, '/textures/cube.png');
+  const isMobile = useMediaQuery({ maxWidth: 768 })
 
   const handleNavigation = (direction) => {
     setSelectedProjectIndex((prevIndex) => {
@@ -85,11 +87,11 @@ function Projects () {
             <directionalLight position={[10, 10, 5]}/>
             <Center>
               <Suspense fallback={<CanvasLoader/>}>
-                <group scale={1} position={[2, 0, 0]} rotation={[0, -0.1, 0]}>
+                <group scale={ isMobile ? 0.8 : 1} position={isMobile ? [1, 0 ,0] : [2, 0, 0]} rotation={[0, -0.1, 0]}>
                   {/*<DemoComputer texture={currentProject.texture}/>*/}
                   <Smartphone texture={currentProject.texture}/>
                 </group>
-                <group scale={0.3} position={[-2.6, 0.7, 1.3]} rotation={[0, 0.4, 0]}>
+                <group scale={isMobile ? 0.3: 0.5} position={isMobile ? [-2.4, 0.7, 1.3] : [-3.2, 0.7, 1.3]} rotation={[0, 0.4, 0]}>
                   <Float speed={1}>
                     <Text3D
                       font="/assets/Lato_Regular.json"
