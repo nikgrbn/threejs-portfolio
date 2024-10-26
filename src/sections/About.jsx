@@ -25,7 +25,7 @@ function About () {
   }
 
 return (
-  <section className="c-space my-5">
+  <section className="c-space my-20">
     <div className="grid xl:grid-cols-3 xl:grid-rows-3 md:grid-cols-2 grid-cols-1 gap-5">
 
       <div className="col-span-1 xl:row-span-3">
@@ -63,7 +63,7 @@ return (
             <p className="grid-headtext"> Tech Stack</p>
             <p className="grid-subtext"> I specialize in full stack development
               of web and native applications.
-              Proficient in Java Python and JS.
+              Proficient in Java, Python and JS.
               In addition, I have experience in design tools like Photoshop, Blender and Figma.
             </p>
           </div>
