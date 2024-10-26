@@ -58,41 +58,39 @@ export const clientReviews = [
 
 export const myProjects = [
     {
-        title: 'Podcastr - AI Podcast Platform',
-        desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
+        title: 'Guess The Place - Android Game',
+        desc: "75,000+ downloads on Play Market and counting! Guess The Place is a 'geoguessr' alike published app." +
+          " Featuring multi-player, in-app purchases, AdMob, Firebase, Server functions and image processing." +
+          ' Diverse game-modes and user activities.',
         subdesc:
-            'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-        href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+            "Built in Android Studio with Java, Kotlin and XML. It utilizes Google APIs and MVVM principles." +
+        " Python for server side and cloud function in JS allow event tracking and multiplayer management.",
+        href: 'https://play.google.com/store/apps/details?id=com.guesstheplace.guesstheplace',
         texture: '/textures/project/project1.mp4',
-        logo: '/assets/project-logo1.png',
+        logo: '/assets/guesstheplace.png',
         logoStyle: {
-            backgroundColor: '#2A1816',
-            border: '0.2px solid #36201D',
+            backgroundColor: '#35183c',
+            border: '0.2px solid #50255AFF',
             boxShadow: '0px 0px 60px 0px #AA3C304D',
         },
-        spotlight: '/assets/spotlight1.png',
+        spotlight: '/assets/spotlight-guesstheplace.png',
         tags: [
             {
-                id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
+                name: 'androidstudio',
             },
             {
-                id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
+                name: 'java',
             },
             {
-                id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
+                name: 'firebase',
             },
             {
-                id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
+                name: 'python',
             },
-        ],
+            {
+                name: 'htmx',
+            }
+        ]
     },
     {
         title: 'LiveDoc - Real-Time Google Docs Clone',
@@ -237,11 +235,7 @@ export const myProjects = [
                 name: 'TypeScript',
                 path: '/assets/typescript.png',
             },
-            {
-                id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
-            },
+
         ],
     },
 ];
