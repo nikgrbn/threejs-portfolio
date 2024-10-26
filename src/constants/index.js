@@ -61,7 +61,7 @@ export const myProjects = [
         title: 'Guess The Place - Android Game',
         desc: "75,000+ downloads on Play Market and counting! Guess The Place is a 'geoguessr' alike published app." +
           " Featuring multi-player, in-app purchases, AdMob, Firebase, Server functions and image processing." +
-          ' Diverse game-modes and user activities.',
+          ' Dive into different game-modes and user activities.',
         subdesc:
             "Built in Android Studio with Java, Kotlin and XML. It utilizes Google APIs and MVVM principles." +
         " Python for server side and cloud function in JS allow event tracking and multiplayer management.",
@@ -93,13 +93,17 @@ export const myProjects = [
         ]
     },
     {
-        title: 'LiveDoc - Real-Time Google Docs Clone',
-        desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
+        title: 'Hebrew Summarizer - AI Model',
+        desc: 'Hebrew Text Summarizer is a Natural Language Processing ML model developed in python.' +
+          ' It gives a short, quick, abstract summarization of any piece of content fed to it.' +
+          ' Made especially for Hebrew language. ' +
+          " Developed in 2021, before 'AI-Boom' it does no worse of a job than ChatGPT!",
         subdesc:
-            'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-        href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+            'Our LSA model processes a dataset of thousands Hebrew articles and utilizes' +
+          ' gensim and FastText pythons libs to decompose them into a matrix with SVD algorithm.',
+        href: 'https://gitlab.com/Rmaps/hebrew-text-summarizer',
         texture: '/textures/project/project2.mp4',
-        logo: '/assets/project-logo2.png',
+        logo: '/assets/hebrewsummarizer.png',
         logoStyle: {
             backgroundColor: '#13202F',
             border: '0.2px solid #17293E',
@@ -108,65 +112,45 @@ export const myProjects = [
         spotlight: '/assets/spotlight2.png',
         tags: [
             {
-                id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
+                name: 'python',
             },
             {
-                id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
+                name: 'tensorflow',
             },
             {
-                id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
+                name: 'js',
             },
-            {
-                id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
-            },
-        ],
+        ]
     },
     {
-        title: 'CarePulse - Health Management System',
-        desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
+        title: 'Portfolio - This Website',
+        desc: 'I wanted to make my portfolio interactive and interesting. What is more interesting than 3D?' +
+          ' Luckily Three Fiber framework helped unwrap my imagination and come up with this website.',
         subdesc:
-            'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-        href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
+            'Developed in React and Three.js, with Tailwind for modern stylistic.' +
+          ' Prop design made mostly in Blender and Photoshop.',
+        href: '/',
         texture: '/textures/project/project3.mp4',
-        logo: '/assets/project-logo3.png',
+        logo: '/assets/ng.png',
         logoStyle: {
-            backgroundColor: '#60f5a1',
-            background:
-                'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
-            border: '0.2px solid rgba(208, 213, 221, 1)',
-            boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
+            backgroundColor: '#222222',
+            border: '0.2px solid #373737',
         },
         spotlight: '/assets/spotlight3.png',
         tags: [
             {
-                id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
+                name: 'react',
             },
             {
-                id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
+                name: 'threejs',
             },
             {
-                id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
+                name: 'tailwind',
             },
             {
-                id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
+                name: 'photoshop',
             },
-        ],
+        ]
     },
     {
         title: 'Horizon - Online Banking Platform',
@@ -184,26 +168,18 @@ export const myProjects = [
         spotlight: '/assets/spotlight4.png',
         tags: [
             {
-                id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
+                name: 'python',
             },
             {
-                id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
+                name: 'tensorflow',
             },
             {
-                id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
+                name: 'js',
             },
             {
-                id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
+                name: 'tailwind',
             },
-        ],
+        ]
     },
     {
         title: 'Imaginify - AI Photo Manipulation App',
@@ -221,22 +197,15 @@ export const myProjects = [
         spotlight: '/assets/spotlight5.png',
         tags: [
             {
-                id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
+                name: 'python',
             },
             {
-                id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
+                name: 'tensorflow',
             },
             {
-                id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
+                name: 'js',
             },
-
-        ],
+        ]
     },
 ];
 
