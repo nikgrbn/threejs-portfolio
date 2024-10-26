@@ -122,21 +122,24 @@ function Hero () {
           <a href="https://github.com/nikgrbn"
              className="w-fit
              inline-block"
-             target="_blank">
+             target="_blank"
+             rel="noreferrer"
+          >
             <img src="https://skillicons.dev/icons?i=github" alt="git"
                  className="w-auto mx-auto h-8 my-2"/>
           </a>
 
           <a href="https://www.linkedin.com/in/nikita-grebenchuk/"
              className="w-fit inline-block"
-             target="_blank">
+             target="_blank"
+             rel="noreferrer"
+          >
             <img src="https://skillicons.dev/icons?i=linkedin" alt="linkedin"
                  className="w-auto mx-auto h-8 my-2"/>
           </a>
         </div>
 
       </div>
-
     </section>
   )
 }

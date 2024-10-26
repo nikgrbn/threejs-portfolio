@@ -27,6 +27,7 @@ function NavBar () {
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center py-5 mx-auto c-space">
           <a href="https://drive.google.com/file/d/14t3tU_4tzqxfrk8rW4rJJ6rDTKMcgetg/view?usp=sharing"
+              target="_blank" rel="noreferrer"
              className="text-neutral-400 text-xl
              hover:text-white transition-colors font-bold">Download CV</a>
 
