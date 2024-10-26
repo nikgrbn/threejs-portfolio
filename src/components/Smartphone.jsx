@@ -6,14 +6,14 @@ import React, { useEffect, useRef } from 'react'
 import { Decal, useGLTF, useTexture, useVideoTexture } from '@react-three/drei'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import { MeshBasicMaterial } from 'three'
 
 function Smartphone(props) {
   const group = useRef();
 
   const { nodes, materials } = useGLTF('/models/smartphone.glb')
   const camTexture = useTexture('textures/rings.png');
-  const bodyTexture = useTexture('textures/cube.png');
-  const txt = useTexture('textures/bulgakov.jpg')
+  const bodyTexture = useTexture('textures/metal.png');
   const displayTexture = useVideoTexture(props.texture ? props.texture : '/textures/project/project2.mp4');
 
   useEffect(() => {
@@ -34,21 +34,20 @@ function Smartphone(props) {
     <group ref={group} {...props} dispose={null}>
       <group scale={40} position={[0, 0.074, 0]} rotation={[Math.PI / 2, 0, 0]}>
         <mesh castShadow receiveShadow geometry={nodes.Cube_1.geometry} material={materials.Body}>
-          <meshMatcapMaterial matcap={bodyTexture} toneMapped={false}/>
+          <meshLambertMaterial map={bodyTexture} toneMapped={false}/>
         </mesh>
         <mesh
           geometry={nodes.Cube_2.geometry}
           material={materials.Display}
         >
           <Decal
-            debug={true}
+            debug={false}
             position={[0, 0.004, 0]}
             rotation={[Math.PI/2, 0, 0]}
             scale={[0.071, 0.13, 0.1]}
           >
             <meshBasicMaterial map={displayTexture} polygonOffset polygonOffsetFactor={-1} toneMapped={false}/>
           </Decal>
-
           {/*<meshBasicMaterial map={displayTexture} toneMapped={false}/>*/}
         </mesh>
 
@@ -57,9 +56,11 @@ function Smartphone(props) {
           receiveShadow
           geometry={nodes.Cube_3.geometry}
           material={materials.metal}
-        />
+        >
+          <meshMatcapMaterial color="red" toneMapped={false}/>
+        </mesh>
         <mesh castShadow receiveShadow geometry={nodes.Cube_4.geometry} material={materials.Body}>
-          <meshMatcapMaterial matcap={bodyTexture} toneMapped={false}/>
+          <meshLambertMaterial map={bodyTexture} toneMapped={false}/>
         </mesh>
         <mesh
           castShadow
@@ -74,7 +75,9 @@ function Smartphone(props) {
             geometry={nodes.Cube002.geometry}
             material={materials.Glass}
             position={[0, -0.001, 0]}
-          />
+          >
+            <meshMatcapMaterial color="#171717" toneMapped={false}/>
+          </mesh>
         </mesh>
         <mesh
           castShadow
@@ -99,7 +102,9 @@ function Smartphone(props) {
           material={materials.camara}
           position={[0.023, -0.005, -0.065]}
           scale={[0.002, 0, 0.002]}
-        />
+        >
+          <meshMatcapMaterial color="red" toneMapped={false}/>
+        </mesh>
         <mesh
           castShadow
           receiveShadow
@@ -107,16 +112,9 @@ function Smartphone(props) {
           material={materials.camara}
           position={[0.015, -0.005, -0.065]}
           scale={[0.002, 0, 0.002]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.MI_Logo.geometry}
-          material={materials['MI Logo']}
-          position={[0, -0.004, 0.048]}
-          rotation={[0, 0, -Math.PI]}
-          scale={0.01}
-        />
+        >
+          <meshMatcapMaterial color="red" toneMapped={false}/>
+        </mesh>
       </group>
     </group>
   )

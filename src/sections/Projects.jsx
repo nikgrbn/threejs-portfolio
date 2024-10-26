@@ -1,16 +1,19 @@
-import React, { Suspense, useState } from 'react'
+import React, { Suspense, useEffect, useRef, useState } from 'react'
 import { myProjects } from '../constants/index.js'
-import { Canvas } from '@react-three/fiber'
-import { Center, OrbitControls } from '@react-three/drei'
+import { Canvas, useLoader } from '@react-three/fiber'
+import { Center, Float, OrbitControls, Text3D, useMatcapTexture, useTexture } from '@react-three/drei'
 import CanvasLoader from '../components/CanvasLoader.jsx'
-import DemoComputer from '../components/DemoComputer.jsx'
 import Smartphone from '../components/Smartphone.jsx'
+import { TextureLoader } from 'three'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 
 const projectCount = myProjects.length
 
 function Projects () {
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(0)
   const currentProject = myProjects[selectedProjectIndex]
+  const matcapTexture = useLoader(TextureLoader, '/textures/cube.png');
 
   const handleNavigation = (direction) => {
     setSelectedProjectIndex((prevIndex) => {
@@ -82,10 +85,45 @@ function Projects () {
             <directionalLight position={[10, 10, 5]}/>
             <Center>
               <Suspense fallback={<CanvasLoader/>}>
-                <group scale={1} position={[0, -3, 0]} rotation={[0, -0.1, 0]}>
+                <group scale={1} position={[2, 0, 0]} rotation={[0, -0.1, 0]}>
                   {/*<DemoComputer texture={currentProject.texture}/>*/}
                   <Smartphone texture={currentProject.texture}/>
                 </group>
+                <group scale={0.3} position={[-2.6, 0.7, 1.3]} rotation={[0, 0.4, 0]}>
+                  <Float speed={1}>
+                    <Text3D
+                      font="/assets/Lato_Regular.json"
+                      position={[1.1, 0, 0]}
+                      bevelEnabled={true}
+                      bevelSize={0.08}
+                      bevelThickness={0.03}
+                      height={1}
+                      lineHeight={0.9}
+                      curveSegments={24}
+                      brevelSegments={1}
+                    >
+                      <meshMatcapMaterial matcap={matcapTexture}/>
+                      {currentProject.upText}
+                    </Text3D>
+
+                    <Text3D
+                      font="/assets/Lato_Regular.json"
+                      position={[0, -2, 0]}
+                      bevelEnabled={true}
+                      bevelSize={0.08}
+                      bevelThickness={0.03}
+                      height={2}
+                      lineHeight={0.9}
+                      curveSegments={24}
+                      brevelSegments={1}
+                    >
+                      <meshMatcapMaterial matcap={matcapTexture}/>
+                      {currentProject.downText}
+                    </Text3D>
+                  </Float>
+
+                </group>
+
               </Suspense>
             </Center>
             <OrbitControls maxPolarAngle={Math.PI/2} enableZoom={false}/>

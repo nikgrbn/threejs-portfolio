@@ -90,7 +90,9 @@ export const myProjects = [
             {
                 name: 'htmx',
             }
-        ]
+        ],
+        upText: "Guess",
+        downText: "The Place",
     },
     {
         title: 'Hebrew Summarizer - AI Model',
@@ -120,7 +122,9 @@ export const myProjects = [
             {
                 name: 'js',
             },
-        ]
+        ],
+        upText: "Hebrew",
+        downText: "Summarizer",
     },
     {
         title: 'Portfolio - This Website',
@@ -150,7 +154,9 @@ export const myProjects = [
             {
                 name: 'photoshop',
             },
-        ]
+        ],
+        upText: "Portfolio",
+        downText: "",
     },
     {
         title: 'Contact Manager - React App',
@@ -175,7 +181,9 @@ export const myProjects = [
             {
                 name: 'js',
             },
-        ]
+        ],
+        upText: "Contact",
+        downText: "Manager App",
     },
 ];
 
