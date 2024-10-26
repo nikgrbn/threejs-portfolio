@@ -8,6 +8,7 @@ import { TextureLoader } from 'three'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { useMediaQuery } from 'react-responsive'
+import Swarm from '../components/Swarm.jsx'
 
 const projectCount = myProjects.length
 
@@ -86,6 +87,7 @@ function Projects () {
             <ambientLight intensity={2}/>
             <directionalLight position={[10, 10, 5]}/>
             <Center>
+              <Swarm count={150} />
               <Suspense fallback={<CanvasLoader/>}>
                 <group scale={ isMobile ? 0.8 : 1} position={isMobile ? [1, 0 ,0] : [2, 0, 0]} rotation={[0, -0.1, 0]}>
                   {/*<DemoComputer texture={currentProject.texture}/>*/}

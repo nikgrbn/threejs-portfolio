@@ -74,19 +74,18 @@ return (
         <div className="grid-container">
           {/*<img src="/assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain"/>*/}
           <Canvas>
-              <Swarm count={150} />
-              <Book
-                texturePath="textures/cp-systems.jpg"
-                isOnFront={true}
-                position={isSmall ? [-1, 0, 0] : isMedium ? [-1.5,0,0] : [-2, 0, 0]}
-                scale={isSmall ? 18 : isMedium ? 20 : 23}
-                rotation={[-Math.PI / 40, -Math.PI / 20, 0]}/>
-              <Book
-                texturePath="textures/bulgakov.jpg"
-                isOnFront={false}
-                position={isSmall ? [3, 0, -5] : [4, 0, -5]}
-                scale={isSmall ? 18 : isMedium ? 20 : 23}
-                rotation={[-Math.PI / 3, 0, -Math.PI / 3]}/>
+            <Book
+              texturePath="textures/cp-systems.jpg"
+              isOnFront={true}
+              position={isSmall ? [-1, 0, 0] : isMedium ? [-1.5, 0, 0] : [-2, 0, 0]}
+              scale={isSmall ? 18 : isMedium ? 20 : 23}
+              rotation={[-Math.PI / 40, -Math.PI / 20, 0]}/>
+            <Book
+              texturePath="textures/bulgakov.jpg"
+              isOnFront={false}
+              position={isSmall ? [3, 0, -5] : [4, 0, -5]}
+              scale={isSmall ? 18 : isMedium ? 20 : 23}
+              rotation={[-Math.PI / 3, 0, -Math.PI / 3]}/>
           </Canvas>
           <div>
             <p className="grid-headtext">
