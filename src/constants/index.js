@@ -153,13 +153,15 @@ export const myProjects = [
         ]
     },
     {
-        title: 'Horizon - Online Banking Platform',
-        desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
+        title: 'Contact Manager - React App',
+        desc: 'A simple Contact Manager application built with React. It allows users to add,' +
+          ' view, edit, and delete contacts. The application also includes a search functionality to filter contacts.',
         subdesc:
-            'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-        href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
+            'App utilizes such key concepts as React Hooks, Routers and JSON Server for simulating a REST' +
+          ' API to manage contacts.',
+        href: 'https://github.com/nikgrbn/contact-manager',
         texture: '/textures/project/project4.mp4',
-        logo: '/assets/project-logo4.png',
+        logo: '/assets/contact.png',
         logoStyle: {
             backgroundColor: '#0E1F38',
             border: '0.2px solid #0E2D58',
@@ -168,39 +170,7 @@ export const myProjects = [
         spotlight: '/assets/spotlight4.png',
         tags: [
             {
-                name: 'python',
-            },
-            {
-                name: 'tensorflow',
-            },
-            {
-                name: 'js',
-            },
-            {
-                name: 'tailwind',
-            },
-        ]
-    },
-    {
-        title: 'Imaginify - AI Photo Manipulation App',
-        desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
-        subdesc:
-            'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-        href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-        texture: '/textures/project/project5.mp4',
-        logo: '/assets/project-logo5.png',
-        logoStyle: {
-            backgroundColor: '#1C1A43',
-            border: '0.2px solid #252262',
-            boxShadow: '0px 0px 60px 0px #635BFF4D',
-        },
-        spotlight: '/assets/spotlight5.png',
-        tags: [
-            {
-                name: 'python',
-            },
-            {
-                name: 'tensorflow',
+                name: 'react',
             },
             {
                 name: 'js',
