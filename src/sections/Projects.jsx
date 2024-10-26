@@ -42,7 +42,8 @@ function Projects () {
         My Projects
       </p>
 
-      <div className="grid lg:grid:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
+      <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
+
         <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200">
           <div className="absolute top-0 right-0">
             <img src={currentProject.spotlight} alt="spotlight" className="w-full h-96 object-cover rounded-xl" />
@@ -82,18 +83,18 @@ function Projects () {
           </div>
         </div>
 
-        <div className="border border-black-300 bg-black-200 rounded-lg h-96 ">
+        <div className="border border-black-300 bg-black-200 rounded-lg h-96 md:h-full">
           <Canvas>
             <ambientLight intensity={2}/>
             <directionalLight position={[10, 10, 5]}/>
             <Center>
               <Swarm count={150} />
               <Suspense fallback={<CanvasLoader/>}>
-                <group scale={ isMobile ? 0.8 : 1} position={isMobile ? [1, 0 ,0] : [2, 0, 0]} rotation={[0, -0.1, 0]}>
+                <group scale={ isMobile ? 0.8 : 0.8} position={isMobile ? [1, 0 ,0] : [1, 0, 0]} rotation={[0, -0.1, 0]}>
                   {/*<DemoComputer texture={currentProject.texture}/>*/}
                   <Smartphone texture={currentProject.texture}/>
                 </group>
-                <group scale={isMobile ? 0.3: 0.5} position={isMobile ? [-2.4, 0.7, 1.3] : [-3.2, 0.7, 1.3]} rotation={[0, 0.4, 0]}>
+                <group scale={isMobile ? 0.4: 0.4} position={isMobile ? [-2.4, 0.7, 1.3] : [-2.2, 0.7, 1.3]} rotation={[0, 0.4, 0]}>
                   <Float speed={1}>
                     <Text3D
                       font="/assets/Lato_Regular.json"

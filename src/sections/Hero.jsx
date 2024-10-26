@@ -89,7 +89,7 @@ function Hero () {
               />
             </HeroCamera>
 
-            <group>
+            <group position={[0,0,0]}>
               <Target position={size.targetPosition}/>
               <ReactLogo position={size.reactLogoPosition}/>
               <Cube position={size.cubePosition}/>
