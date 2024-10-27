@@ -5,6 +5,7 @@ import About from './sections/About.jsx'
 import Projects from './sections/Projects.jsx'
 import Contact from './sections/Contact.jsx'
 import Footer from './sections/Footer.jsx'
+import Education from './sections/Education.jsx'
 
 function App () {
   return (
@@ -13,6 +14,7 @@ function App () {
       <Hero/>
       <About/>
       <Projects/>
+      <Education/>
       <Contact/>
       <Footer/>
     </main>
