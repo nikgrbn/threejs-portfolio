@@ -114,7 +114,7 @@ function Hero () {
 
       <div className="absolute bottom-7 left-0 right-0 w-fit mx-auto z-10 c-space">
 
-        <a href="#contact" className="w-full ">
+        <a href="#about" className="w-full ">
           <Button name="Let's discuss my future" isBeam containerClass="sm:2-fit w-fit sm:min-2-96 "/>
         </a>
 
