@@ -4,7 +4,7 @@ import { workExperiences } from '../constants/index.js'
 
 function Education () {
   return (
-    <section className="c-space my-20">
+    <section className="c-space my-20" id="education">
       <div className="w-full text-white-600">
         <h3 className="head-text">My Education</h3>
       </div>
