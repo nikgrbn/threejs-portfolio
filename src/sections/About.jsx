@@ -7,6 +7,8 @@ import { Canvas } from '@react-three/fiber'
 import { Float, OrbitControls } from '@react-three/drei'
 import { useMediaQuery } from 'react-responsive'
 import Swarm from '../components/Swarm.jsx'
+import Volleyball from '../components/Volleyball.jsx'
+import { Leva, useControls } from 'leva'
 
 function About () {
   const isSmall = useMediaQuery({ maxWidth: 768 })
@@ -23,6 +25,44 @@ function About () {
       setHasCopied(false)
     }, 2000)
   }
+
+  const x = useControls('Volleyball', {
+    positionX: {
+      value: 2.5,
+      min: -10,
+      max: 10,
+    },
+    positionY: {
+      value: 2.5,
+      min: -10,
+      max: 10,
+    },
+    positionZ: {
+      value: 2.5,
+      min: -10,
+      max: 10,
+    },
+    rotationX: {
+      value: 0,
+      min: -10,
+      max: 10,
+    },
+    rotationY: {
+      value: 0,
+      min: -10,
+      max: 10,
+    },
+    rotationZ: {
+      value: 0,
+      min: -10,
+      max: 10,
+    },
+    scale: {
+      value: 1,
+      min: 0.1,
+      max: 10
+    }
+  })
 
 return (
   <section className="c-space my-20" id="about">
@@ -73,7 +113,20 @@ return (
       <div className="xl:col-span-2 xl:row-span-3">
         <div className="grid-container">
           {/*<img src="/assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain"/>*/}
+          <Leva/>
           <Canvas>
+            <directionalLight intensity={2} scale={1}/>
+            <ambientLight intensity={0.8} scale={0.1}/>
+            <Volleyball
+              // position={[x.positionX, x.positionY, x.positionZ]}
+              // rotation={[x.rotationX, x.rotationY, x.rotationZ]}
+              // scale={[x.scale, x.scale, x.scale]}
+
+              position={[4.1, -0.7, 0]}
+              rotation={[6.4, 0.2, -4.0]}
+              scale={1}
+            />
+
             <Book
               texturePath="textures/cp-systems.jpg"
               isOnFront={true}
