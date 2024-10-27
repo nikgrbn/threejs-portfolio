@@ -68,7 +68,7 @@ function Hero () {
           <span className="waving-hand">👋</span>
         </p>
         <p className="hero_tag text-gray_gradient">
-          Building & Improving things
+          Building & Developing things
         </p>
       </div>
 
@@ -89,7 +89,7 @@ function Hero () {
               />
             </HeroCamera>
 
-            <group>
+            <group position={[0,0,0]}>
               <Target position={size.targetPosition}/>
               <ReactLogo position={size.reactLogoPosition}/>
               <Cube position={size.cubePosition}/>
@@ -112,12 +112,34 @@ function Hero () {
         </Canvas>
       </div>
 
-      <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
-        <a href="#contact" className="w-fit">
-          <Button name="Let's discuss my future 😊" isBeam containerClass="sm:2-fit w-full sm:min-2-96"/>
-        </a>
-      </div>
+      <div className="absolute bottom-7 left-0 right-0 w-fit mx-auto z-10 c-space">
 
+        <a href="#about" className="w-full ">
+          <Button name="Let's discuss my future" isBeam containerClass="sm:2-fit w-fit sm:min-2-96 "/>
+        </a>
+
+        <div className="flex justify-center space-x-2">
+          <a href="https://github.com/nikgrbn"
+             className="w-fit
+             inline-block"
+             target="_blank"
+             rel="noreferrer"
+          >
+            <img src="https://skillicons.dev/icons?i=github" alt="git"
+                 className="w-auto mx-auto h-8 my-2"/>
+          </a>
+
+          <a href="https://www.linkedin.com/in/nikita-grebenchuk/"
+             className="w-fit inline-block"
+             target="_blank"
+             rel="noreferrer"
+          >
+            <img src="https://skillicons.dev/icons?i=linkedin" alt="linkedin"
+                 className="w-auto mx-auto h-8 my-2"/>
+          </a>
+        </div>
+
+      </div>
     </section>
   )
 }
