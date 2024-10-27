@@ -1,8 +1,14 @@
-# React + Vite
+# [My Portfolio Website](https://nikita-grebenchuk.netlify.app/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![](https://github.com/nikgrbn/threejs-portfolio/blob/master/website-preview.png)
 
-Currently, two official plugins are available:
+Visit my portfolio: https://nikita-grebenchuk.netlify.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📑 Features
+
+- Interactive 3D Models – Built with Three.js and Three Fiber for immersive experiences.
+- Smooth Animations – GSAP library used to enhance transitions and interactions.
+- Responsive Design – Optimized for all devices with Tailwind CSS.
+
+## 🛠 Tech Stack
+[![](https://skillicons.dev/icons?i=react,threejs,tailwind)]()
