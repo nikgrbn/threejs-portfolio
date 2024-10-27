@@ -26,43 +26,43 @@ function About () {
     }, 2000)
   }
 
-  const x = useControls('Volleyball', {
-    positionX: {
-      value: 2.5,
-      min: -10,
-      max: 10,
-    },
-    positionY: {
-      value: 2.5,
-      min: -10,
-      max: 10,
-    },
-    positionZ: {
-      value: 2.5,
-      min: -10,
-      max: 10,
-    },
-    rotationX: {
-      value: 0,
-      min: -10,
-      max: 10,
-    },
-    rotationY: {
-      value: 0,
-      min: -10,
-      max: 10,
-    },
-    rotationZ: {
-      value: 0,
-      min: -10,
-      max: 10,
-    },
-    scale: {
-      value: 1,
-      min: 0.1,
-      max: 10
-    }
-  })
+  // const x = useControls('Volleyball', {
+  //   positionX: {
+  //     value: 2.5,
+  //     min: -10,
+  //     max: 10,
+  //   },
+  //   positionY: {
+  //     value: 2.5,
+  //     min: -10,
+  //     max: 10,
+  //   },
+  //   positionZ: {
+  //     value: 2.5,
+  //     min: -10,
+  //     max: 10,
+  //   },
+  //   rotationX: {
+  //     value: 0,
+  //     min: -10,
+  //     max: 10,
+  //   },
+  //   rotationY: {
+  //     value: 0,
+  //     min: -10,
+  //     max: 10,
+  //   },
+  //   rotationZ: {
+  //     value: 0,
+  //     min: -10,
+  //     max: 10,
+  //   },
+  //   scale: {
+  //     value: 1,
+  //     min: 0.1,
+  //     max: 10
+  //   }
+  // })
 
 return (
   <section className="c-space my-20" id="about">
@@ -113,7 +113,6 @@ return (
       <div className="xl:col-span-2 xl:row-span-3">
         <div className="grid-container">
           {/*<img src="/assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain"/>*/}
-          <Leva/>
           <Canvas>
             <directionalLight intensity={2} scale={1}/>
             <ambientLight intensity={0.8} scale={0.1}/>
@@ -122,30 +121,30 @@ return (
               // rotation={[x.rotationX, x.rotationY, x.rotationZ]}
               // scale={[x.scale, x.scale, x.scale]}
 
-              position={[4.1, -0.7, 0]}
+              position={isSmall ? [2.1, -0.7, 0] : isMedium ? [0.5, -0.3, -2.2] : [4.1, -0.7, 0]}
               rotation={[6.4, 0.2, -4.0]}
-              scale={1}
+              scale={isSmall ? 0.9 : isMedium ? 1.2 : 1}
             />
 
             <Book
               texturePath="textures/cp-systems.jpg"
               isOnFront={true}
-              position={isSmall ? [-1, 0, 0] : isMedium ? [-1.5, 0, 0] : [-2, 0, 0]}
+              position={isSmall ? [-2, 0, 0] : isMedium ? [-1.5, 0, 0] : [-2, 0, 0]}
               scale={isSmall ? 18 : isMedium ? 20 : 23}
               rotation={[-Math.PI / 40, -Math.PI / 20, 0]}/>
             <Book
               texturePath="textures/bulgakov.jpg"
               isOnFront={false}
-              position={isSmall ? [3, 0, -5] : [4, 0, -5]}
+              position={isSmall ? [1, 0, -5] : [4, 0, -5]}
               scale={isSmall ? 18 : isMedium ? 20 : 23}
               rotation={[-Math.PI / 3, 0, -Math.PI / 3]}/>
           </Canvas>
           <div>
             <p className="grid-headtext">
-              Books! Books! Books!
+              Books! Volley! Books!
             </p>
             <p className="grid-subtext">
-              Reading is my favorite hobby.
+              Playing volleyball and reading are my hobbies.
               You can check
               <a href="https://www.goodreads.com/user/show/155514694-nikita-grebenchuk"
                  target="_blank"
