@@ -11,8 +11,8 @@ export const navLinks = [
     },
     {
         id: 3,
-        name: 'Work',
-        href: '#work',
+        name: 'Education',
+        href: '#education',
     },
     {
         id: 4,
@@ -58,50 +58,51 @@ export const clientReviews = [
 
 export const myProjects = [
     {
-        title: 'Podcastr - AI Podcast Platform',
-        desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
+        title: 'Guess The Place - Android Game',
+        desc: "75,000+ downloads on Play Market and counting! Guess The Place is a 'geoguessr' alike published app." +
+          " Featuring multi-player, in-app purchases, AdMob, Firebase, Server functions and image processing." +
+          ' Dive into different game-modes and user activities.',
         subdesc:
-            'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-        href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+            "Built in Android Studio with Java, Kotlin and XML. It utilizes Google APIs and MVVM principles." +
+        " Python for server side and cloud function in JS allow event tracking and multiplayer management.",
+        href: 'https://play.google.com/store/apps/details?id=com.guesstheplace.guesstheplace',
         texture: '/textures/project/project1.mp4',
-        logo: '/assets/project-logo1.png',
+        logo: '/assets/guesstheplace.png',
         logoStyle: {
-            backgroundColor: '#2A1816',
-            border: '0.2px solid #36201D',
+            backgroundColor: '#35183c',
+            border: '0.2px solid #50255AFF',
             boxShadow: '0px 0px 60px 0px #AA3C304D',
         },
-        spotlight: '/assets/spotlight1.png',
+        spotlight: '/assets/spotlight-guesstheplace.png',
         tags: [
             {
-                id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
+                name: 'androidstudio',
             },
             {
-                id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
+                name: 'java',
             },
             {
-                id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
+                name: 'firebase',
             },
             {
-                id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
+                name: 'python',
             },
         ],
+        upText: "Guess",
+        downText: "The Place",
     },
     {
-        title: 'LiveDoc - Real-Time Google Docs Clone',
-        desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
+        title: 'Hebrew Summarizer - AI Model',
+        desc: 'Hebrew Text Summarizer is a Natural Language Processing ML model developed in python.' +
+          ' It gives a short, quick, abstract summarization of any piece of content fed to it.' +
+          ' Made especially for Hebrew language. ' +
+          " Developed in 2021, before 'AI-Boom' it does no worse of a job than ChatGPT!",
         subdesc:
-            'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-        href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+            'Our LSA model processes a dataset of thousands Hebrew articles and utilizes' +
+          ' gensim and FastText pythons libs to decompose them into a matrix with SVD algorithm.',
+        href: 'https://gitlab.com/Rmaps/hebrew-text-summarizer',
         texture: '/textures/project/project2.mp4',
-        logo: '/assets/project-logo2.png',
+        logo: '/assets/hebrewsummarizer.png',
         logoStyle: {
             backgroundColor: '#13202F',
             border: '0.2px solid #17293E',
@@ -110,74 +111,60 @@ export const myProjects = [
         spotlight: '/assets/spotlight2.png',
         tags: [
             {
-                id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
+                name: 'python',
             },
             {
-                id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
+                name: 'tensorflow',
             },
             {
-                id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
-            },
-            {
-                id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
+                name: 'js',
             },
         ],
+        upText: "Hebrew",
+        downText: "Summarizer",
     },
     {
-        title: 'CarePulse - Health Management System',
-        desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
+        title: 'Portfolio - This Website',
+        desc: 'I wanted to make my portfolio interactive and interesting. What is more interesting than 3D?' +
+          ' Luckily Three Fiber framework helped unwrap my imagination and come up with this website.',
         subdesc:
-            'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-        href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
+            'Developed in React and Three.js, with Tailwind for modern stylistic.' +
+          ' Prop design made mostly in Blender and Photoshop.',
+        href: '/',
         texture: '/textures/project/project3.mp4',
-        logo: '/assets/project-logo3.png',
+        logo: '/assets/ng.png',
         logoStyle: {
-            backgroundColor: '#60f5a1',
-            background:
-                'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
-            border: '0.2px solid rgba(208, 213, 221, 1)',
-            boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
+            backgroundColor: '#222222',
+            border: '0.2px solid #373737',
         },
         spotlight: '/assets/spotlight3.png',
         tags: [
             {
-                id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
+                name: 'react',
             },
             {
-                id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
+                name: 'threejs',
             },
             {
-                id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
+                name: 'tailwind',
             },
             {
-                id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
+                name: 'photoshop',
             },
         ],
+        upText: "Portfolio",
+        downText: "",
     },
     {
-        title: 'Horizon - Online Banking Platform',
-        desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
+        title: 'Contact Manager - React App',
+        desc: 'A simple Contact Manager application built with React. It allows users to add,' +
+          ' view, edit, and delete contacts. The application also includes a search functionality to filter contacts.',
         subdesc:
-            'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-        href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
+            'App utilizes such key concepts as React Hooks, Routers and JSON Server for simulating a REST' +
+          ' API to manage contacts.',
+        href: 'https://github.com/nikgrbn/contact-manager',
         texture: '/textures/project/project4.mp4',
-        logo: '/assets/project-logo4.png',
+        logo: '/assets/contact.png',
         logoStyle: {
             backgroundColor: '#0E1F38',
             border: '0.2px solid #0E2D58',
@@ -186,103 +173,68 @@ export const myProjects = [
         spotlight: '/assets/spotlight4.png',
         tags: [
             {
-                id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
+                name: 'react',
             },
             {
-                id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
-            },
-            {
-                id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
-            },
-            {
-                id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
+                name: 'js',
             },
         ],
-    },
-    {
-        title: 'Imaginify - AI Photo Manipulation App',
-        desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
-        subdesc:
-            'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-        href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-        texture: '/textures/project/project5.mp4',
-        logo: '/assets/project-logo5.png',
-        logoStyle: {
-            backgroundColor: '#1C1A43',
-            border: '0.2px solid #252262',
-            boxShadow: '0px 0px 60px 0px #635BFF4D',
-        },
-        spotlight: '/assets/spotlight5.png',
-        tags: [
-            {
-                id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
-            },
-            {
-                id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
-            },
-            {
-                id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
-            },
-            {
-                id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
-            },
-        ],
+        upText: "Contact",
+        downText: "Manager App",
     },
 ];
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
     return {
-        deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.065,
-        deskPosition: isMobile ? [0.5, -4.5, 0] : [0.25, -5.5, 0],
-        cubePosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
-        reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [12, 3, 0],
+        deskScale: isSmall ? 0.045 : isMobile ? 0.055 : 0.060,
+        deskPosition: isMobile ? [0.5, -3.5, 0] : [0.25, -4.0, 0],
+        cubePosition: isSmall ? [3, -5, 0] : isMobile ? [4, -5, 0] : isTablet ? [5, -5, 0] : [7, -5.5, 0],
+        reactLogoPosition: isSmall ? [2, 5, 0] : isMobile ? [3, 5, 0] : isTablet ? [4, 4, 0] : [7, 3, 0],
         ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-12, 10, 0] : [-24, 10, 0],
-        targetPosition: isSmall ? [-5, -10, -10] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-13, -13, -10],
+        targetPosition: isSmall ? [-5, -10, -10] : isMobile ? [-5, -10, -10] : isTablet ? [-9, -7, -10] : [-11, -11, -10],
+        bookScale: 0.9,
+        bookPosition: [-9.1, -0.9, -0.3],
+        bookRotation: [-5, -6.4, -0.2],
+        androidLogoScale: 0.3,
+        androidLogoPosition: isSmall? [-1.2, 2.2, 9.4] : isMobile ? [-2, 2, 9.4] : isTablet ? [-3, 2.7, 9.4] : [-4, 2.7, 9.4],
+        androidLogoRotation: [0.4, 0.6, -0.2]
+
     };
 };
 
 export const workExperiences = [
     {
         id: 1,
-        name: 'Framer',
-        pos: 'Lead Web Developer',
-        duration: '2022 - Present',
-        title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-        icon: '/assets/framer.svg',
+        name: 'Bar-Ilan University',
+        pos: 'Bachelor\'s degree, Computer Science',
+        duration: '2023 - Present',
+        title: "My coursework covers a range of areas, including data structures," +
+          " calculus, and object-oriented programming. I've tackled exams and projects" +
+          " that apply these principles, with an " +
+          " average score of 86.",
+        icon: '/assets/bar-ilan.png',
         animation: 'victory',
     },
     {
         id: 2,
-        name: 'Figma',
-        pos: 'Web Developer',
+        name: 'Magshimim',
+        pos: 'Cyber Education Center',
         duration: '2020 - 2022',
-        title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-        icon: '/assets/figma.svg',
+        title: "An intensive three-year flagship program, provided me with in-depth" +
+          " training in such fields as networking, cybersecurity and OS, " +
+          " as well as in programming in C/C++, Python, ASM and more.",
+        icon: '/assets/magshimim.png',
         animation: 'clapping',
     },
     {
         id: 3,
-        name: 'Notion',
-        pos: 'Junior Web Developer',
-        duration: '2019 - 2020',
-        title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-        icon: '/assets/notion.svg',
+        name: 'Moshe Sharet',
+        pos: ' Graduate with Honors',
+        duration: '2022',
+        title: "In high school I excelled in Mathematics, Physics and Computer Science," +
+          " all with avg. score of 100. I completed the 5-point program in Android Development " +
+          "and graduated with honors.",
+        icon: '/assets/sharet.png',
         animation: 'salute',
     },
 ];
