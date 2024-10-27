@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { Suspense, useEffect, useRef } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { workExperiences } from '../constants/index.js'
+import { OrbitControls, Stars } from '@react-three/drei'
+import CanvasLoader from '../components/CanvasLoader.jsx'
+import Rocket from '../components/Rocket.jsx'
+import { SpotLightHelper } from 'three'
+import Swarm from '../components/Swarm.jsx'
 
 function Education () {
+
   return (
     <section className="c-space my-20" id="education">
       <div className="w-full text-white-600">
@@ -12,6 +18,27 @@ function Education () {
       <div className="work-container">
         <div className="work-canvas">
           <Canvas>
+            <ambientLight intensity={0.8}/>
+            <spotLight
+                       position={[0,5,5]}
+                       angle={0.3}
+                       penumbra={1}
+                       intensity={5}/>
+            <directionalLight position={[10,10,10]} intensity={1}/>
+            <OrbitControls enableZoom={false} maxPolarAngle={Math.PI/2}/>
+
+            <Stars
+              radius={100} // Radius of the inner sphere (default=100)
+              depth={50} // Depth of area where stars should fit (default=50)
+              count={1000} // Amount of stars (default=5000)
+              factor={6} // Size factor (default=4)
+              saturation={0} // Saturation 0-1 (default=0)
+              fade // Faded dots (default=false)
+            />
+
+            <Suspense fallback={<CanvasLoader/>}>
+              <Rocket scale={3} position={[0,-4,0]}/>
+            </Suspense>
 
           </Canvas>
         </div>
