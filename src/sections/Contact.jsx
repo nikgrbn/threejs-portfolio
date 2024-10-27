@@ -50,7 +50,7 @@ function Contact () {
 
   }
 
-  const isMobile = useMediaQuery({ maxWidth: 1280 })
+  const isMobile = useMediaQuery({ maxWidth: 1080 })
 
   return (
     <section className="c-space my-20" id="contact">
@@ -60,7 +60,7 @@ function Contact () {
                className="absolute inset-0 min-h-screen"/>
         )}
         <div className="contact-container">
-          <h3 className="head-text">Let's talk</h3>
+          <h3 className="head-text mt-5">Let's talk</h3>
           <p className="text-lg text-white-600 mt-3">
             I'm always open to new opportunities and collaborations.
             If you have a project in mind or just want to say hi, feel free to reach out.
