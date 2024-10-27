@@ -205,29 +205,36 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
     {
         id: 1,
-        name: 'Framer',
-        pos: 'Lead Web Developer',
-        duration: '2022 - Present',
-        title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-        icon: '/assets/framer.svg',
+        name: 'Bar-Ilan University',
+        pos: 'Bachelor\'s degree, Computer Science',
+        duration: '2023 - Present',
+        title: "My coursework covers a range of areas, including data structures," +
+          " calculus, and object-oriented programming. I've tackled exams and projects" +
+          " that apply these principles, with an " +
+          " average score of 86.",
+        icon: '/assets/bar-ilan.png',
         animation: 'victory',
     },
     {
         id: 2,
-        name: 'Figma',
-        pos: 'Web Developer',
+        name: 'Magshimim',
+        pos: 'Cyber Education Center',
         duration: '2020 - 2022',
-        title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-        icon: '/assets/figma.svg',
+        title: "An intensive three-year flagship program, provided me with in-depth" +
+          " training in such fields as networking, cybersecurity and OS, " +
+          " as well as in programming in C/C++, Python, ASM and more.",
+        icon: '/assets/magshimim.png',
         animation: 'clapping',
     },
     {
         id: 3,
-        name: 'Notion',
-        pos: 'Junior Web Developer',
-        duration: '2019 - 2020',
-        title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-        icon: '/assets/notion.svg',
+        name: 'Moshe Sharet',
+        pos: ' Graduate with Honors',
+        duration: '2022',
+        title: "In high school I excelled in Mathematics, Physics and Computer Science," +
+          " all with avg. score of 100. I completed the 5-point program in Android Development " +
+          "and graduated with honors.",
+        icon: '/assets/sharet.png',
         animation: 'salute',
     },
 ];

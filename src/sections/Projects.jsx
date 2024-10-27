@@ -88,13 +88,14 @@ function Projects () {
             <ambientLight intensity={2}/>
             <directionalLight position={[10, 10, 5]}/>
             <Center>
-              <Swarm count={150} />
+              <Swarm count={150}/>
               <Suspense fallback={<CanvasLoader/>}>
-                <group scale={ isMobile ? 0.8 : 0.8} position={isMobile ? [1, 0 ,0] : [1, 0, 0]} rotation={[0, -0.1, 0]}>
+                <group scale={isMobile ? 0.8 : 0.8} position={isMobile ? [1.5, 0, 0] : [1, 0, 0]} rotation={[0, -0.1, 0]}>
                   {/*<DemoComputer texture={currentProject.texture}/>*/}
                   <Smartphone texture={currentProject.texture}/>
                 </group>
-                <group scale={isMobile ? 0.4: 0.4} position={isMobile ? [-2.4, 0.7, 1.3] : [-2.2, 0.7, 1.3]} rotation={[0, 0.4, 0]}>
+                <group scale={isMobile ? 0.4 : 0.4} position={isMobile ? [-2.2, 0.7, 1.3] : [-2.2, 0.7, 1.3]}
+                       rotation={[0, 0.4, 0]}>
                   <Float speed={1}>
                     <Text3D
                       font="/assets/Lato_Regular.json"

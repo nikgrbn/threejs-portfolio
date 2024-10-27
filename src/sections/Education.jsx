@@ -30,7 +30,7 @@ function Education () {
 
                   <div className="sm:p-5 px-2.5 py-5">
                     <p className="font-bold text-white-800">{name}</p>
-                    <p className="text-sm mb-5 text-white-500">{pos} -- {duration}</p>
+                    <p className="text-sm mb-5 text-white-500">{pos} | {duration}</p>
                     <p className="text-white-500 group-hover:text-white transition ease-in-out duration-500">
                       {title}
                     </p>
