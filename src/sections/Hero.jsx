@@ -1,15 +1,13 @@
-import React, { Suspense } from 'react'
+import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { PerspectiveCamera } from '@react-three/drei'
 import HackerRoom from '../components/HackerRoom.jsx'
 import CanvasLoader from '../components/CanvasLoader.jsx'
-import { Leva, useControls } from 'leva'
 import { useMediaQuery } from 'react-responsive'
 import { calculateSizes } from '../constants/index.js'
 import Target from '../components/Target.jsx'
 import ReactLogo from '../components/ReactLogo.jsx'
 import Cube from '../components/Cube.jsx'
-import Book from '../components/Book.jsx'
 import AndroidLogo from '../components/AndroidLogo.jsx'
 import HeroCamera from '../components/HeroCamera.jsx'
 import Button from '../components/Button.jsx'
@@ -60,7 +58,7 @@ function Hero () {
   const size = calculateSizes(isSmall, isMobile, isTablet)
 
   return (
-    <section className="min-h-screen flex flex-col relative">
+    <section className="min-h-screen flex flex-col relative" id="home">
       <div className="w-full mx-auto flex flex-col
       sm:mt-36 mt-20 c-space gap-3">
         <p className="sm:text-3xl text-2xl font-medium text-white text-center font-generalsans">
@@ -73,7 +71,6 @@ function Hero () {
       </div>
 
       <div className="w-full h-full absolute inset-0">
-        <Leva/>
         <Canvas className="w-full h-full">
           <Suspense fallback={<CanvasLoader/>}>
             <PerspectiveCamera makeDefault position={[0, 0, 30]}/>
