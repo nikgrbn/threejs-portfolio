@@ -1,11 +1,9 @@
-import React, { Suspense, useEffect, useRef } from 'react'
+import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { workExperiences } from '../constants/index.js'
 import { OrbitControls, Stars } from '@react-three/drei'
 import CanvasLoader from '../components/CanvasLoader.jsx'
 import Rocket from '../components/Rocket.jsx'
-import { SpotLightHelper } from 'three'
-import Swarm from '../components/Swarm.jsx'
 
 function Education () {
 

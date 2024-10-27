@@ -1,7 +1,7 @@
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
 
 function Volleyball(props) {
   const { nodes, materials } = useGLTF('/models/volleyball/scene.gltf')

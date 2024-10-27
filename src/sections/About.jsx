@@ -1,14 +1,9 @@
-import React, { useState } from 'react'
-import Globe from 'react-globe.gl'
+import { useState } from 'react'
 import MyGlobe from '../components/MyGlobe.jsx'
-import Button from '../components/Button.jsx'
 import Book from '../components/Book.jsx'
 import { Canvas } from '@react-three/fiber'
-import { Float, OrbitControls } from '@react-three/drei'
 import { useMediaQuery } from 'react-responsive'
-import Swarm from '../components/Swarm.jsx'
 import Volleyball from '../components/Volleyball.jsx'
-import { Leva, useControls } from 'leva'
 
 function About () {
   const isSmall = useMediaQuery({ maxWidth: 768 })

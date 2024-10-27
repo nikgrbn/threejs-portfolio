@@ -1,8 +1,6 @@
-import React, { useRef, useState } from 'react'
+import { useRef } from 'react'
 import { Decal, useGLTF, useTexture } from '@react-three/drei'
 import PropTypes from 'prop-types'
-
-
 
 export function Book (props) {
   const { nodes, materials } = useGLTF('models/book.glb')

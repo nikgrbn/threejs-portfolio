@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from 'react'
-import { useGLTF, useAnimations } from '@react-three/drei'
+import { useEffect, useRef } from 'react'
+import { useAnimations, useGLTF } from '@react-three/drei'
 
 function Rocket(props) {
   const group = useRef()
